@@ -13,10 +13,9 @@
 ## 快速开始
 
 ```bash
-python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-cp .env.example .env  # 或手动创建 .env
-.venv/bin/python main.py
+pip install -r requirements.txt
+cp .env.example .env  # 然后填入 SESSION_TOKEN
+python main.py
 ```
 
 ## 配置
@@ -25,7 +24,6 @@ cp .env.example .env  # 或手动创建 .env
 
 ```
 SESSION_TOKEN=<从微信小程序抓包获取>
-EXPECTED_SEND_AMOUNT=6000  # 可选；不设则用查询接口返回的 face_value
 ```
 
 ### 如何获取 SESSION_TOKEN
